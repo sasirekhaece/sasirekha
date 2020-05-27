@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     body{
+         background-color:rgb(165, 112, 196);
+         font-family:comic neue;
+         font-size: 25px;
+      }
+    </style>
+</head>
+<body>
+{% block content %}
+<h2>Resume</h2>
+
+
+<div class="container">
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-20">
+                <label>First name</label>
+            </div>
+            <div class="col-70">
+                <input type="text" placeholder="{{firstname}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-20">
+                <label>Last name</label>
+            </div>
+            <div class="col-70">
+                <input type="text"  placeholder="{{lastname}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-20">
+                <label>Mobile</label>
+
+            </div>
+            <div class="col-70">
+                <input type="text" placeholder="{{mobileno}}">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-20">
+                <label>Street </label>
+            </div>
+            <div class="col-70">
+                <input type="text" placeholder="{{street}}">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-20">
+                <label>City</label>
+            </div>
+            <div class="col-70">
+                <input type="text" placeholder="{{city}}">
+            </div>
+        </div
+         <div class="row">
+            <div class="col-20">
+                <label>State</label>
+            </div>
+            <div class="col-70">
+                <input type="text" placeholder="{{state}}">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-20">
+                <label>Country</label>
+            </div>
+            <div class="col-70">
+                <input type="text"  placeholder="{{country}}">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-20">
+                <label>Pincode</label>
+            </div>
+            <div class="col-70">
+                <input type="text"  placeholder="{{pincode}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-20">
+                <label>Educational Qualification </label>
+            </div>
+            <div class="col-70">
+                <input type="text"  placeholder="{{educationalqualification}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-20">
+                <label>work experience </label>
+            </div>
+            <div class="col-70">
+                <input type="text"  placeholder="{{workexperience}}">
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

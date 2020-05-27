@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+     body{
+
+         font-family: comic neue;
+         background-color: rgb(173, 66, 255);
+      }
+    </style>
+    </head>
+    <body>
+    {% block content %}
+    <center>
+    <br><br><br><br>
+    <h1>Parsing the Resume<br></h1>
+    <h1 style="font:monospace">SasiRekhaVenkat</h1>
+    <br><br><br><br>
+    <p>Click "choose file" button to upload a file:</p>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="document">
+        <button type="submit">upload</button>
+    </form>
+    </center>
+    {% endblock %}
+    </body>
+    </html>
